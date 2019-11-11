@@ -12,7 +12,7 @@ body {
   height: 500px;
 }
 
-.image {
+.box {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ body {
   overflow: hidden;
 }
 
-.image::after {
+.box::after {
   content: "";
   display: block;
   width: 800px;
@@ -30,17 +30,17 @@ body {
   background-position: center;
 }
 
-.image:nth-child(1):after {
-  background-image: url(./images/1.png);
+.box:nth-child(1):after {
+  background-color: rgb(163, 107, 255);
 }
-.image:nth-child(2):after {
-  background-image: url(./images/2.png);
+.box:nth-child(2):after {
+  background-color: rgb(178, 214, 130);
 }
-.image:nth-child(3):after {
-  background-image: url(./images/3.png);
+.box:nth-child(3):after {
+  background-color: rgb(129, 200, 241);
 }
-.image:nth-child(4):after {
-  background-image: url(./images/4.png);
+.box:nth-child(4):after {
+  background-color: rgb(255, 68, 68);
 }
 
 .paint {
@@ -60,36 +60,36 @@ body {
 /**************************************************************
  * animation
  **************************************************************/
-.image:nth-child(1) {
-  animation: show-image 0.5s ease 0.5s forwards;
+.box:nth-child(1) {
+  animation: show-box 0.8s ease 0.5s forwards;
 }
-.image:nth-child(2) {
-  animation: show-image 0.5s ease 0.7s forwards;
+.box:nth-child(2) {
+  animation: show-box 0.8s ease 0.9s forwards;
 }
-.image:nth-child(3) {
-  animation: show-image 0.5s ease 0.9s forwards;
+.box:nth-child(3) {
+  animation: show-box 0.8s ease 1.4s forwards;
 }
-.image:nth-child(4) {
-  animation: show-image 0.5s ease 1.1s forwards;
+.box:nth-child(4) {
+  animation: show-box 0.8s ease 1.8s forwards;
 }
 
 .paint div:nth-child(1) {
-  animation: slide-right 0.5s ease 1.6s forwards;
+  animation: slide-right 0.7s ease 2.3s forwards;
 }
 .paint div:nth-child(2) {
-  animation: slide-right 0.5s ease 1.7s forwards;
+  animation: slide-right 0.7s ease 2.4s forwards;
 }
 .paint div:nth-child(3) {
-  animation: slide-right 0.5s ease 1.8s forwards;
+  animation: slide-right 0.7s ease 2.5s forwards;
 }
 .paint div:nth-child(4) {
-  animation: slide-right 0.5s ease 1.9s forwards;
+  animation: slide-right 0.7s ease 2.6s forwards;
 }
 
 /**************************************************************
  * keyframes
 ***************************************************************/
-@keyframes show-image {
+@keyframes show-box {
   from {
     width: 0%;
   }
