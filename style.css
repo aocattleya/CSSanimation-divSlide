@@ -6,7 +6,7 @@ body {
 
 #slider {
   position: absolute;
-  top: calc(50% - 20px);
+  top: calc(50% - 250px);
   left: calc(50% - 400px);
   width: 800px;
   height: 500px;
